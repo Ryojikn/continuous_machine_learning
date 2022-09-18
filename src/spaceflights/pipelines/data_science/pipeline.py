@@ -32,13 +32,15 @@ def create_pipeline(**kwargs) -> Pipeline:
         inputs="model_input_table",
         namespace="active_modelling_pipeline",
     )
-    ds_pipeline_2 = pipeline(
-        pipe=pipeline_instance,
-        inputs="model_input_table",
-        namespace="candidate_modelling_pipeline",
-    )
+    # ds_pipeline_2 = pipeline(
+    #     pipe=pipeline_instance,
+    #     inputs="model_input_table",
+    #     namespace="candidate_modelling_pipeline",
+    # )
     return pipeline(
-        pipe=ds_pipeline_1 + ds_pipeline_2,
+        pipe=ds_pipeline_1
+        # + ds_pipeline_2
+        ,
         inputs="model_input_table",
         namespace="data_science",
     )

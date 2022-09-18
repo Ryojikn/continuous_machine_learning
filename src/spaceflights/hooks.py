@@ -13,7 +13,9 @@ class ModelTrackingHooks:
         import os
 
         main_uri = "databricks"
-        os.environ["DATABRICKS_HOST"] = "DBX_URL"
+        os.environ[
+            "DATABRICKS_HOST"
+        ] = "https://adb-5911813420488264.4.azuredatabricks.net"
         os.environ["DATABRICKS_TOKEN"] = f"{databricks_token}"
         mlflow.set_tracking_uri(main_uri)
         mlflow.set_registry_uri(main_uri)
