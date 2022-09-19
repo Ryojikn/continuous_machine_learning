@@ -3,9 +3,11 @@ from the Kedro defaults. For further information, including these default values
 https://kedro.readthedocs.io/en/stable/kedro_project_setup/settings.html."""
 
 # Instantiated project hooks.
-from spaceflights.hooks import ModelTrackingHooks
+from continuous_machine_learning.mlflow_hook import ModelTrackingHooks
 
-HOOK = (ModelTrackingHooks(),)
+# from continuous_machine_learning.catalog_hook import DataCatalogHooks
+
+HOOKS = (ModelTrackingHooks(),)
 
 # Installed plugins for which to disable hook auto-registration.
 # DISABLE_HOOKS_FOR_PLUGINS = ("kedro-viz",)
@@ -23,7 +25,7 @@ HOOK = (ModelTrackingHooks(),)
 # CONTEXT_CLASS = KedroContext
 
 # Directory that holds configuration.
-# CONF_SOURCE = "conf"
+CONF_SOURCE = "conf"
 
 # Class that manages how configuration is loaded.
 # from kedro.config import TemplatedConfigLoader

@@ -3,8 +3,8 @@ from typing import Dict
 
 from kedro.pipeline import Pipeline
 
-from spaceflights.pipelines import data_processing as dp
-from spaceflights.pipelines import data_science as ds
+from continuous_machine_learning.pipelines import data_processing as dp
+from continuous_machine_learning.pipelines import data_science as ds
 
 
 def register_pipelines() -> Dict[str, Pipeline]:

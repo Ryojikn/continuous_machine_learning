@@ -1,6 +1,6 @@
 [tool.kedro]
-package_name = "spaceflights"
-project_name = "Spaceflights"
+package_name = "continuous_machine_learning"
+project_name = "Continuous ML"
 project_version = "0.18.2"
 
 [tool.isort]
@@ -9,7 +9,7 @@ profile = "black"
 [tool.pytest.ini_options]
 addopts = """
 --cov-report term-missing \
---cov src/spaceflights -ra"""
+--cov src/continuous_machine_learning -ra"""
 
 [tool.coverage.report]
 fail_under = 0

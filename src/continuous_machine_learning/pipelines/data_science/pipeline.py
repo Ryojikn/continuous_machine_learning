@@ -22,7 +22,7 @@ def create_pipeline(**kwargs) -> Pipeline:
             node(
                 func=evaluate_model,
                 inputs=["regressor", "X_test", "y_test"],
-                outputs=None,
+                outputs="score",
                 name="evaluate_model_node",
             ),
         ]
