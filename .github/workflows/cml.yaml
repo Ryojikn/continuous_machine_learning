@@ -17,6 +17,8 @@ jobs:
           # Your ML workflow goes here
           pip install -r src/requirements.txt
           kedro run
+        env: # Or as an environment variable
+          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
           
       - name: Write CML report
         env:
