@@ -20,10 +20,10 @@ jobs:
         env: # Or as an environment variable
           DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
           
-      - name: Write CML report
-        env:
-          REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          # Post reports as comments in GitHub PRs
-          cat results.txt >> report.md
-          cml send-comment report.md
+      # - name: Write CML report
+      #   env:
+      #     REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   run: |
+      #     # Post reports as comments in GitHub PRs
+      #     cat results.txt >> report.md
+      #     cml send-comment report.md
