@@ -7,7 +7,7 @@ from continuous_machine_learning.mlflow_hook import ModelTrackingHooks
 
 # from continuous_machine_learning.catalog_hook import DataCatalogHooks
 
-HOOKS = (ModelTrackingHooks(),)
+# HOOKS = (ModelTrackingHooks(),)
 
 # Installed plugins for which to disable hook auto-registration.
 # DISABLE_HOOKS_FOR_PLUGINS = ("kedro-viz",)

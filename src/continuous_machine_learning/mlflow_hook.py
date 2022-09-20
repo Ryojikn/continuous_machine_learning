@@ -30,7 +30,7 @@ class ModelTrackingHooks:
     def __load_config__(self):
         conf_path = Path(os.getcwd()) / settings.CONF_SOURCE
         conf_loader = ConfigLoader(conf_source=conf_path, env="local")
-        conf_params = conf_loader.get("parameters/data_science*")
+        conf_params = conf_loader.get("parameters/train*")
         return conf_params
 
     @hook_impl

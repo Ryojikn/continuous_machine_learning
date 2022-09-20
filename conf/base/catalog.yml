@@ -71,13 +71,13 @@ model_input_table:
   filepath: data/03_primary/model_input_table.pq
   layer: primary
 
-data_science.active_modelling_pipeline.regressor:
+train.active_modelling_pipeline.regressor:
   type: pickle.PickleDataSet
   filepath: data/06_models/regressor_active.pickle
   versioned: true
   layer: models
 
-data_science.candidate_modelling_pipeline.regressor:
+train.candidate_modelling_pipeline.regressor:
   type: pickle.PickleDataSet
   filepath: data/06_models/regressor_candidate.pickle
   versioned: true
