@@ -29,4 +29,4 @@ jobs:
       #     cml send-comment report.md
   docker:
     needs: run
-    uses: ./.github/workflows/Docker.yml
+    uses: ./Docker.yml
