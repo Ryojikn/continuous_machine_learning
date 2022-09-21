@@ -30,3 +30,4 @@ jobs:
   docker:
     needs: run
     uses: ./.github/workflows/Docker.yml
+    secrets: inherit
