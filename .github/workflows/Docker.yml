@@ -31,7 +31,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          push: true
           tags: user/app:latest
 
           # # List of a customs host-to-IP mapping (e.g., docker:10.180.0.1)
@@ -53,7 +52,7 @@ jobs:
           # # Build's context is the set of files located in the specified PATH or URL
           # context: # optional
           # # Path to the Dockerfile
-          # file: # optional
+          file: ./Dockerfile
           # # List of metadata for an image
           # labels: # optional
           # # Load is a shorthand for --output=type=docker
@@ -70,8 +69,8 @@ jobs:
           # platforms: # optional
           # # Always attempt to pull all referenced images
           # pull: # optional, default is false
-          # # Push is a shorthand for --output=type=registry
-          # push: # optional, default is false
+          # Push is a shorthand for --output=type=registry
+          push: true # optional, default is false
           # # List of secrets to expose to the build (e.g., key=string, GIT_AUTH_TOKEN=mytoken)
           # secrets: # optional
           # # List of secret files to expose to the build (e.g., key=filename, MY_SECRET=./secret.txt)
