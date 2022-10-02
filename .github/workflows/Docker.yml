@@ -34,6 +34,4 @@ jobs:
           context: .
           tags: ryojikn/app:latest
           # # Path to the Dockerfile
-          file: ./Dockerfile
-      
           push: true # optional, default is false
