@@ -32,6 +32,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
+          file: ./Dockerfile
           tags: ryojikn/app:latest
           # # Path to the Dockerfile
           push: true # optional, default is false
