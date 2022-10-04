@@ -26,7 +26,8 @@ jobs:
           # ecr: # optional, default is auto
           # # Log out from the Docker registry at the end of a job
           # logout: # optional, default is true
-
+      - name: Download a Build Artifact
+        uses: actions/download-artifact@v3.0.0
       -
         name: Build and push
         uses: docker/build-push-action@v3
